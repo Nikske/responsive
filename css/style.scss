@@ -1,0 +1,60 @@
+/* General */
+body {
+  width: 80%;
+  margin: auto;
+  font-family: sans-serif;
+}
+.lorem {
+  margin: auto;
+}
+.moving {
+  background-color: darkslategray;
+  border: 3px gray solid;
+  padding: 2%;
+  text-align: center;
+}
+/* Small */
+@media only screen and (max-width:300px) {
+  body {
+    background-color: red;
+    font-size: 130%;
+  }
+  #medium, #large {
+    display: none;
+  }
+  .moving {
+    width: 60%;
+    margin: 4% auto 0 auto;
+  }
+}
+/* Medium */
+@media only screen and (min-width:301px) and (max-width: 768px) {
+  body {
+    background-color: green;
+    font-size: 110%;
+  }
+  #small, #large {
+    display: none;
+  }
+  #one {
+    width: 66%;
+  }
+  #two {
+    width: 33%;
+  }
+  #three {
+    width: 100%;
+  }
+}
+/* Large */
+@media only screen and (min-width: 769px) {
+  body {
+    background-color: blue;
+  }
+  #small, #medium {
+    display: none;
+  }
+  .moving {
+    display: inline-block;
+  }
+}
