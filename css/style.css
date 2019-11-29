@@ -65,8 +65,16 @@ body {
     display: none;
   }
 
+  #parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .moving {
     display: inline-block;
+    width: 25%;
+    margin: 2%;
   }
 }
 
